@@ -64,11 +64,11 @@ build_script:
   - go get -t ./...
 
 # To run your custom scripts instead of automatic tests
-test_script:
-  # Unit tests
-  - ps: Add-AppveyorTest "Unit Tests" -Outcome Running
-  - go test -v github.com/go-vgo/robotgo/...
-  - ps: Update-AppveyorTest "Unit Tests" -Outcome Passed
+#test_script:
+#  # Unit tests
+#  - ps: Add-AppveyorTest "Unit Tests" -Outcome Running
+#  - go test -v github.com/go-vgo/robotgo/...
+#  - ps: Update-AppveyorTest "Unit Tests" -Outcome Passed
 
 # notifications:
 #   - provider: Email
